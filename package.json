@@ -1,0 +1,27 @@
+{
+  "name": "bbc-iplayer-automation",
+  "version": "1.0.0",
+  "description": "BBC iPlayer test automation framework using Playwright and Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "auth": "node auth.setup.js",
+    "test:live": "cross-env TEST_ENV=live cucumber-js",
+    "auth:live": "cross-env TEST_ENV=live node auth.setup.js"
+  },
+  "keywords": [
+    "playwright",
+    "cucumber",
+    "bdd",
+    "automation",
+    "bbc",
+    "iplayer"
+  ],
+  "author": "Harshith",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "cross-env": "^10.1.0",
+    "playwright": "^1.55.0"
+  }
+}
