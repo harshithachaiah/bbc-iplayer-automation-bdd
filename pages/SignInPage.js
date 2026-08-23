@@ -1,19 +1,11 @@
 const environment = require("../config/environment");
 
-class SignInPage {
+const navigateToSignInPage = async (page) => {
+    await page.goto(environment.signInUrl, {
+        waitUntil: "domcontentloaded"
+    });
+};
 
-    constructor(page) {
-        this.page = page;
-    }
-
-    async navigate() {
-        await this.page.goto(
-            environment.signInUrl,
-            {
-                waitUntil: "domcontentloaded"
-            }
-        );
-    }
-}
-
-module.exports = SignInPage;
+module.exports = {
+    navigateToSignInPage
+};

@@ -1,19 +1,11 @@
 const environment = require("../config/environment");
 
-class HomePage {
+const navigateToHomePage = async (page) => {
+    await page.goto(environment.baseUrl, {
+        waitUntil: "domcontentloaded"
+    });
+};
 
-    constructor(page) {
-        this.page = page;
-    }
-
-    async navigate() {
-        await this.page.goto(
-            environment.baseUrl,
-            {
-                waitUntil: "domcontentloaded"
-            }
-        );
-    }
-}
-
-module.exports = HomePage;
+module.exports = {
+    navigateToHomePage
+};

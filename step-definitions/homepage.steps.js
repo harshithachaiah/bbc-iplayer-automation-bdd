@@ -1,12 +1,12 @@
 const { Given, Then } = require("@cucumber/cucumber");
 
-const HomePage = require("../pages/HomePage");
+const {
+    navigateToHomePage
+} = require("../pages/HomePage");
 
 Given("I navigate to the BBC iPlayer homepage", async function () {
 
-    this.homePage = new HomePage(this.page);
-
-    await this.homePage.navigate();
+    await navigateToHomePage(this.page);
 
 });
 
