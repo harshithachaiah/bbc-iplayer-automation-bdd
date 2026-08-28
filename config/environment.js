@@ -5,7 +5,7 @@ const environments = {
         baseUrl:
             "https://www.test.bbctvapps.co.uk/tap/telly/iplayer?featureToggles=isUhdCapable",
 
-        signInUrl:
+        accountSelectionUrl:
             "https://www.test.bbctvapps.co.uk/tap/telly/iplayer/account/manage/selection?featureToggles=isUhdCapable#avatar-signin"
     },
 
@@ -15,14 +15,13 @@ const environments = {
         baseUrl:
             "https://www.live.bbctvapps.co.uk/tap/telly/iplayer?featureToggles=isUhdCapable",
 
-        signInUrl:
+        accountSelectionUrl:
             "https://www.live.bbctvapps.co.uk/tap/telly/iplayer/account/manage/selection?featureToggles=isUhdCapable#avatar-signin"
     }
 };
 
-const environmentName = (
-    process.env.TEST_ENV || "test"
-).toLowerCase();
+const environmentName =
+    (process.env.TEST_ENV || "test").toLowerCase();
 
 const environment = environments[environmentName];
 

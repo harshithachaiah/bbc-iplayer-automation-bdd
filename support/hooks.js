@@ -20,6 +20,6 @@ After(async function (scenario) {
         await this.takeFailureScreenshot();
     }
 
-    // await this.closeBrowser();
+    await this.closeBrowser();
 
 });
