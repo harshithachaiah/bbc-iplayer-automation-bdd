@@ -4,10 +4,12 @@
   "description": "BBC iPlayer test automation framework using Playwright and Cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js",
+    "playwright_test": "cucumber-js",
     "auth": "node auth.setup.js",
-    "test:live": "cross-env TEST_ENV=live cucumber-js",
-    "auth:live": "cross-env TEST_ENV=live node auth.setup.js"
+    "playwright_test:live": "cross-env TEST_ENV=live cucumber-js",
+    "playwright_test:test": "cross-env TEST_ENV=test cucumber-js",
+    "auth:live": "cross-env TEST_ENV=live node auth.setup.js",
+    "auth:test": "cross-env TEST_ENV=test node auth.setup.js"
   },
   "keywords": [
     "playwright",

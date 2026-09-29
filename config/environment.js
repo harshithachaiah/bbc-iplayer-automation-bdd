@@ -5,8 +5,8 @@ const environments = {
         baseUrl:
             "https://www.test.bbctvapps.co.uk/tap/telly/iplayer?featureToggles=isUhdCapable",
 
-        accountSelectionUrl:
-            "https://www.test.bbctvapps.co.uk/tap/telly/iplayer/account/manage/selection?featureToggles=isUhdCapable#avatar-signin"
+        signInUrl:
+        'https://www.test.bbctvapps.co.uk/tap/telly/iplayer/account/onboard/pairing/challenge?featureToggles=isUhdCapable#accessible-content'
     },
 
     live: {
@@ -15,8 +15,8 @@ const environments = {
         baseUrl:
             "https://www.live.bbctvapps.co.uk/tap/telly/iplayer?featureToggles=isUhdCapable",
 
-        accountSelectionUrl:
-            "https://www.live.bbctvapps.co.uk/tap/telly/iplayer/account/manage/selection?featureToggles=isUhdCapable#avatar-signin"
+        signInUrl:
+        'https://www.live.bbctvapps.co.uk/tap/telly/iplayer/account/onboard/pairing/challenge?featureToggles=isUhdCapable#accessible-content'
     }
 };
 
